@@ -2,7 +2,6 @@
 using login_app.Dtos;
 using login_app.Helpers;
 using login_app.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace login_app.Controllers
@@ -16,21 +15,19 @@ namespace login_app.Controllers
 
         public AuthController(IUserRepository repository, JwtService jwtService)
         {
-            _repository = repository; 
+            _repository = repository;
             _jwtService = jwtService;
         }
 
         [HttpPost("register")]
         public IActionResult Register(RegisterDtos dto)
         {
-            var user = new User { 
-                Name = dto.Name, 
-                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password), 
-                Email = dto.Email 
+            var user = new User
+            {
+                Name = dto.Name,
+                Email = dto.Email,
+                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password)
             };
-
-            _repository.Create(user);
-
             return Created("success", _repository.Create(user));
         }
 
@@ -57,7 +54,6 @@ namespace login_app.Controllers
             {
                 message = "success"
             });
-
         }
         [HttpGet("user")]
         public IActionResult User()
@@ -74,12 +70,13 @@ namespace login_app.Controllers
 
                 return Ok(user);
             }
-            catch
+            catch (Exception)
             {
                 return Unauthorized();
             }
         }
-        [HttpDelete("logout")]
+
+        [HttpPost("logout")]
         public IActionResult Logout()
         {
             Response.Cookies.Delete("jwt");

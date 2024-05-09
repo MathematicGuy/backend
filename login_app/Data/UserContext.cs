@@ -3,12 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace login_app.Data
 {
-    public class UserContext: DbContext
+    public class UserContext : DbContext
     {
-        public UserContext(DbContextOptions<UserContext> options): base(options)
+        public UserContext(DbContextOptions<UserContext> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
+
+        public DbSet<User> Users { set; get; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

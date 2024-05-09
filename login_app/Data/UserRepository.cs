@@ -2,7 +2,7 @@
 
 namespace login_app.Data
 {
-    public class UserRepository: IUserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly UserContext _context;
 

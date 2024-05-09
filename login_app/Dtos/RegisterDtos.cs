@@ -2,8 +2,8 @@
 {
     public class RegisterDtos
     {
-        public string Name { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
+        public string Name { set; get; }
+        public string Email { set; get; }
+        public string Password { set; get; }
     }
 }

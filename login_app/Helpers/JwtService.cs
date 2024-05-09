@@ -20,8 +20,8 @@ namespace login_app.Helpers
             return new JwtSecurityTokenHandler().WriteToken(securityToken);
         }
 
-        public JwtSecurityToken Verify (string jwt) { 
-            
+        public JwtSecurityToken Verify(string jwt)
+        {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secureKey);
             tokenHandler.ValidateToken(jwt, new TokenValidationParameters

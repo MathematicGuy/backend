@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S9xx5vDlTM5CCzr52bAZxtxj+DiyitGvuEgOHhg4HvDYA3SL5yLIId0YhD6VP3S++lP0t4RdqCvosfoYJP5A9g==",
+  "dgSpecHash": "W5zSePLPgkC/U+w4SKwtyfHW3ErV7m0KJn3PvPIhHnelbmjLfR4IEZZUn+vouJ67VKeViyMXTQbxpqNb60KJBA==",
   "success": true,
-  "projectFilePath": "E:\\Learn\\WEB-Project\\backend\\login_app\\login_app.csproj",
+  "projectFilePath": "D:\\File hoc\\Learn\\be\\backend\\login_app\\login_app.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yunomi Xavia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Yunomi Xavia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

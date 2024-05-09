@@ -4483,11 +4483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Learn\\WEB-Project\\backend\\login_app\\login_app.csproj",
+      "projectUniqueName": "D:\\File hoc\\Learn\\be\\backend\\login_app\\login_app.csproj",
       "projectName": "login_app",
-      "projectPath": "E:\\Learn\\WEB-Project\\backend\\login_app\\login_app.csproj",
+      "projectPath": "D:\\File hoc\\Learn\\be\\backend\\login_app\\login_app.csproj",
       "packagesPath": "C:\\Users\\Yunomi Xavia\\.nuget\\packages\\",
-      "outputPath": "E:\\Learn\\WEB-Project\\backend\\login_app\\obj\\",
+      "outputPath": "D:\\File hoc\\Learn\\be\\backend\\login_app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
